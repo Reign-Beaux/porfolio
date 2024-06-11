@@ -1,0 +1,35 @@
+<section id="contact">
+  <div class="contact__container">
+    <h2>Contacto</h2>
+    <form action="#" method="post">
+      <div>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</section>
+
+
+<style>
+  #contact {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+  }
+  .contact__container {
+    width: 60%;
+    text-align: center;
+  }
+</style>
