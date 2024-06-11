@@ -1,24 +1,23 @@
 <section id="contact">
   <div class="contact__container">
     <h2>Contacto</h2>
-    <form action="#" method="post">
-      <div>
+    <form id="fontact__form" action="#" method="post">
+      <div class="form-group">
         <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" name="name" />
       </div>
-      <div>
+      <div class="form-group">
         <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" />
       </div>
-      <div>
+      <div class="form-group">
         <label for="message">Mensaje:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
+        <textarea id="message" name="message" rows="4"></textarea>
       </div>
-      <button type="submit">Enviar</button>
+      <button id="contact__button-submit" type="submit">Enviar</button>
     </form>
   </div>
 </section>
-
 
 <style>
   #contact {
@@ -30,6 +29,41 @@
   }
   .contact__container {
     width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-group {
+    margin-bottom: 1rem;
+    text-align: initial;
+  }
+  #contact__button-submit {
+    padding: 0.5rem;
+    background-color: rgb(201 75 75);
+    width: 15rem;
     text-align: center;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  
+  #contact__button-submit:hover {
+    background-color: hsl(0, 54%, 44%);
+  }
+  #fontact__form {
+    text-align: end;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+  }
+  input,
+  textarea {
+    width: 500px;
+    box-sizing: border-box;
+    color: hsl(231, 10%, 10%);
+    font-size: 1.2rem;
   }
 </style>
